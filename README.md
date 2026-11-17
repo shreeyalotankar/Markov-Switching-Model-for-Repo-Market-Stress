@@ -17,6 +17,8 @@ The analysis evaluates whether repo spreads are primarily driven by collateral s
 GC Repo Spread
 
 GC Basket Repo Rate − GC EXTended Basket Repo Rate
+<img width="829" height="336" alt="image" src="https://github.com/user-attachments/assets/4a8af1dd-39a3-45bb-b60f-bef28be0791f" />
+<img width="1023" height="418" alt="image" src="https://github.com/user-attachments/assets/923c8dd9-d900-4b44-825a-b17165f9ef46" />
 
 This spread serves as a measure of collateral scarcity and secured funding market stress.
 
@@ -25,16 +27,19 @@ This spread serves as a measure of collateral scarcity and secured funding marke
 Excess Liquidity
 
 Liquidity held by banks at the ECB resulting from QE programmes, TLTROs and balance-sheet policies.
+<img width="1608" height="649" alt="image" src="https://github.com/user-attachments/assets/d52ff839-d515-4bb2-943d-b2a99486f1e2" />
 
 BTP-Bund Spread
 
 Difference between Italian and German 10-year government bond yields.
 
 Used as a proxy for sovereign fragmentation risk in the Euro Area.
+<img width="1016" height="409" alt="image" src="https://github.com/user-attachments/assets/7fbf8179-b9eb-4c7f-865c-e910328b4a8c" />
 
 Deposit Facility Rate (DFR)
 
 Included as a monetary-policy control variable.
+<img width="1013" height="416" alt="image" src="https://github.com/user-attachments/assets/c958aa0d-8280-4d51-bc5f-656a701b4b5c" />
 
 ## Methodology
 

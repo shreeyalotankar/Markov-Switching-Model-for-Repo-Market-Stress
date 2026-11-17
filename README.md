@@ -66,16 +66,4 @@ Markov Switching models outperform standard OLS specifications in explaining rep
 
 Repo market behaviour exhibits significant regime dependence and persistence.
 
-## Repository Structure
-
-/data
-Raw and processed datasets
-
-/models
-OLS and Markov Switching estimations
-
-/figures
-Charts and visualisations
-
-/results
 Regression outputs and robustness tests

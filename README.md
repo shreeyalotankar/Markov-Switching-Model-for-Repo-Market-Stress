@@ -1,49 +1,81 @@
-# Markov-Switching Model for predicting Repo Market Stress
+# Markov-Switching Model for predicting Repo Market Stress as a function of Sovereign Fragmentation and ECB Liquidity.
 
-This master thesis investigates how collateral scarcity and sovereign fragmentation affect pricing in the Eurozone repo market. The study focuses on the spread between the GC Pooling ECB Basket and GC Pooling ECB EXTended Basket repo rates as a measure of stress in the European secured funding market. 
+## Overview
+
+This repository contains the code and empirical analysis for my Master's thesis on repo market stress in the Euro Area. The study investigates the determinants of the spread between the GC Pooling ECB Basket and the GC Pooling ECB EXTended Basket repo rates between 2016 and 2025.
 
 ## Research Question
 
-What drives repo market stress in the Eurozone?
+How do ECB excess liquidity and sovereign fragmentation influence repo market stress?
 
-Specifically:
+The analysis evaluates whether repo spreads are primarily driven by collateral scarcity resulting from ECB monetary policy or by sovereign risk within the monetary union.
 
-Does ECB excess liquidity influence repo market spreads?
-Does sovereign fragmentation, measured by the BTP-Bund spread, affect repo stress?
-Which factor is more important across different market regimes?
+## Variables
 
-Daily data from 2016–2025 including:
+### Dependent Variable
 
--GC Pooling ECB Basket repo rates
--GC Pooling ECB EXTended Basket repo rates
--Italian 10Y BTP yields
--German 10Y Bund yields
--ECB excess liquidity
--ECB Deposit Facility Rate (DFR)
+GC Repo Spread
+
+GC Basket Repo Rate − GC EXTended Basket Repo Rate
+
+This spread serves as a measure of collateral scarcity and secured funding market stress.
+
+### Independent Variables
+
+Excess Liquidity
+
+Liquidity held by banks at the ECB resulting from QE programmes, TLTROs and balance-sheet policies.
+
+BTP-Bund Spread
+
+Difference between Italian and German 10-year government bond yields.
+
+Used as a proxy for sovereign fragmentation risk in the Euro Area.
+
+Deposit Facility Rate (DFR)
+
+Included as a monetary-policy control variable.
 
 ## Methodology
 
-The paper compares:
+Two modelling approaches are employed:
 
--Ordinary Least Squares (OLS)
--Markov Switching Dynamic Regression (MSDR)
--Markov Switching Mean and Heteroskedasticity Model (MSMH)
+### Ordinary Least Squares (OLS)
 
-The preferred specification is a two-regime Markov Switching model that identifies:
+Used as a benchmark model to estimate average relationships between repo spreads and explanatory variables.
 
-A baseline regime
-A stress regime
+### Markov Switching Models
 
-and allows both spread levels and volatility to vary across market states.
+MSDR (Markov Switching Dynamic Regression)
 
-## Topics
--Euro Area Repo Market
--ECB Monetary Policy
--Quantitative Easing (QE)
--Quantitative Tightening (QT)
--Sovereign Fragmentation
--BTP-Bund Spread
--Excess Liquidity
--Markov Switching Models
-Financial Market Microstructure
-Secured Funding Markets
+MSMH (Markov Switching Mean and Heteroskedasticity)
+
+These models identify distinct market regimes and allow parameter estimates to vary during normal and stressed periods.
+
+## Main Findings
+
+The results indicate that:
+
+Collateral scarcity and ECB excess liquidity are the primary drivers of repo market stress.
+
+The effect of excess liquidity remains statistically significant across both normal and stress regimes.
+
+Sovereign fragmentation becomes substantially more important during periods of market stress.
+
+Markov Switching models outperform standard OLS specifications in explaining repo market dynamics.
+
+Repo market behaviour exhibits significant regime dependence and persistence.
+
+## Repository Structure
+
+/data
+Raw and processed datasets
+
+/models
+OLS and Markov Switching estimations
+
+/figures
+Charts and visualisations
+
+/results
+Regression outputs and robustness tests
